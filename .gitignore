@@ -1,4 +1,5 @@
 # OpenCloud Community Workspace .gitignore
+.claude/settings.local.json
 # This file excludes the actual git repositories from the workspace parent
 
 # Additional cloned opencloud-eu repositories
