@@ -2,10 +2,21 @@
 # This file excludes the actual git repositories from the workspace parent
 
 # Exclude all repository directories (they have their own git repos)
-/opencloud/        # git@github.com:opencloud-eu/opencloud.git
-/docs/             # git@github.com:opencloud-eu/docs.git
-/opencloud-compose/ # git@github.com:opencloud-eu/opencloud-compose.git
-/helm/             # git@github.com:opencloud-eu/helm.git
+
+# git@github.com:opencloud-eu/opencloud.git
+/opencloud/
+
+# git@github.com:opencloud-eu/docs.git
+/docs/
+
+# git@github.com:opencloud-eu/opencloud-compose.git
+/opencloud-compose/
+
+# git@github.com:opencloud-eu/helm.git
+/helm/
+
+# git@github.com:opencloud-community/nexus.git
+/nexus/
 
 # OS generated files
 .DS_Store

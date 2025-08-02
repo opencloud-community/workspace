@@ -10,6 +10,7 @@ This is a workspace containing multiple OpenCloud-related repositories:
 - **docs/** - Documentation website repository (git@github.com:opencloud-eu/docs.git)
 - **opencloud-compose/** - Docker Compose configurations (git@github.com:opencloud-eu/opencloud-compose.git)
 - **helm/** - Helm charts for Kubernetes deployments (git@github.com:opencloud-eu/helm.git)
+- **nexus/** - OpenCloud Community Nexus - community knowledge hub (git@github.com:opencloud-community/nexus.git)
 
 Each directory is a separate repository with its own development workflow.
 
@@ -102,6 +103,21 @@ helm install opencloud ./charts/opencloud
 helm install opencloud ./charts/opencloud-microservices
 # For development deployment
 helm install opencloud ./charts/opencloud-dev
+```
+
+### Community Nexus (nexus/)
+
+Start development server for community documentation:
+```bash
+cd nexus
+npm install
+npm start
+```
+
+Build community documentation:
+```bash
+cd nexus
+npm run build
 ```
 
 ## High-Level Architecture

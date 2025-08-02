@@ -10,6 +10,7 @@ This workspace contains the following repositories:
 - **[docs/](https://github.com/opencloud-eu/docs)** - Documentation website (Docusaurus)
 - **[opencloud-compose/](https://github.com/opencloud-eu/opencloud-compose)** - Docker Compose deployment configurations
 - **[helm/](https://github.com/opencloud-eu/helm)** - Community-maintained Helm charts for Kubernetes deployments
+- **[nexus/](https://github.com/opencloud-community/nexus)** - OpenCloud Community Nexus - community knowledge hub
 
 ## Setup
 
@@ -25,6 +26,7 @@ git clone git@github.com:opencloud-eu/opencloud.git
 git clone git@github.com:opencloud-eu/docs.git
 git clone git@github.com:opencloud-eu/opencloud-compose.git
 git clone git@github.com:opencloud-eu/helm.git
+git clone git@github.com:opencloud-community/nexus.git
 ```
 
 ## Development
