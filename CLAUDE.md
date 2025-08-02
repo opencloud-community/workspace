@@ -72,10 +72,49 @@ This workspace contains all OpenCloud-related repositories from both GitHub orga
 
 Each directory is a separate repository with its own development workflow.
 
+### Development Workflow
+
+#### Workflow for Changes
+
+1. **Add concept in workspace repository**
+   - Create a markdown file in `concepts/` folder
+   - Use format: `YYYYMMDD-descriptive-title.md`
+   - Document the idea, plan, and technical approach
+
+2. **Create issue in the related code repository fork**
+   - Open an issue in the opencloud-community fork
+   - Reference the concept document
+   - Discuss implementation details
+
+3. **Work on the issue**
+   - Create a new feature branch in the fork
+   - Implement the changes
+   - Create a PR to the fork's main branch
+   - After review, PR can be created to upstream
+
+#### How to Fork Repositories
+
+When forking opencloud-eu repositories to opencloud-community:
+
+1. **Naming convention**: Fork repository "abc" as `opencloud-eu-abc`
+   - Example: `opencloud` → `opencloud-eu-opencloud`
+   - Example: `web` → `opencloud-eu-web`
+
+2. **Fork using GitHub CLI**:
+   ```bash
+   gh repo fork opencloud-eu/abc --org opencloud-community --clone=false
+   ```
+
+3. **Add fork as remote**:
+   ```bash
+   cd abc
+   git remote add community git@github.com:opencloud-community/opencloud-eu-abc.git
+   ```
+
 ### Contribution Workflow
 
 **For opencloud-eu repositories:**
-- Fork the repository to your personal GitHub account
+- Fork the repository to opencloud-community (see forking instructions above)
 - Create feature branches for your changes
 - Submit pull requests to the upstream repository
 - Wait for review and approval from maintainers
