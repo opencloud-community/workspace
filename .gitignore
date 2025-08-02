@@ -1,22 +1,41 @@
 # OpenCloud Community Workspace .gitignore
 # This file excludes the actual git repositories from the workspace parent
 
-# Exclude all repository directories (they have their own git repos)
+# Additional cloned opencloud-eu repositories
+/.github
+/android
+/android-dav
+/awesome-apps
+/cdperf
+/ci-docker-desktop
+/container-clamav-icap
+/container-radicale
+/containers-woodpecker-windows
+/craft-blueprints-opencloud
+/desktop
+/docs
+/go-micro-plugins
+/helm
+/ios
+/ios-sdk
+/libre-graph-api
+/libre-graph-api-cpp-qt-client
+/libre-graph-api-go
+/libre-graph-api-php
+/libre-graph-api-typescript-axios
+/openbuild
+/opencloud
+/opencloud-compose
+/qa
+/rclone
+/reva
+/web
+/web-app-skeleton
+/web-extensions
+/woodpecker-ci-config-service
 
-# git@github.com:opencloud-eu/opencloud.git
-/opencloud/
-
-# git@github.com:opencloud-eu/docs.git
-/docs/
-
-# git@github.com:opencloud-eu/opencloud-compose.git
-/opencloud-compose/
-
-# git@github.com:opencloud-eu/helm.git
-/helm/
-
-# git@github.com:opencloud-community/nexus.git
-/nexus/
+# opencloud-community repositories
+/nexus
 
 # OS generated files
 .DS_Store
