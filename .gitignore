@@ -1,0 +1,29 @@
+# OpenCloud Community Workspace .gitignore
+# This file excludes the actual git repositories from the workspace parent
+
+# Exclude all repository directories (they have their own git repos)
+/opencloud/        # git@github.com:opencloud-eu/opencloud.git
+/docs/             # git@github.com:opencloud-eu/docs.git
+/opencloud-compose/ # git@github.com:opencloud-eu/opencloud-compose.git
+/helm/             # git@github.com:opencloud-eu/helm.git
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Keep CLAUDE.md and other workspace-level files
+!CLAUDE.md
+!.gitignore
+!README.md
