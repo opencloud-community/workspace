@@ -39,8 +39,10 @@ fi
 echo "✅ Starting OpenCloud server..."
 echo ""
 
-export OC_CONFIG_DIR="$CONFIG_DIR"
 export OC_LOG_DIR="$LOG_DIR"
+
+# Change to config directory so relative paths work
+cd "$CONFIG_DIR"
 
 # Run in foreground so we can see the output
 exec "$BINARY" server

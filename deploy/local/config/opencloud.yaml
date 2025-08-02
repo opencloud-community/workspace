@@ -28,7 +28,7 @@ nats:
   nats_port: 9233
   nats_cluster_id: opencloud-local
   nats_jetstream_enabled: true
-  nats_store_dir: /Users/felix/work/opencloud/deploy/local/data/nats
+  nats_store_dir: ../data/nats
 
 # Gateway service
 gateway:
@@ -40,7 +40,7 @@ auth_basic:
   auth_manager: json
   auth_managers:
     json:
-      users_file: /Users/felix/work/opencloud/deploy/local/config/users.json
+      users_file: users.json
 
 # User storage
 storage_users:
@@ -50,7 +50,7 @@ storage_users:
   grpc_addr: 0.0.0.0:9157
   drivers:
     posix:
-      root: /Users/felix/work/opencloud/deploy/local/data/storage
+      root: ../data/storage
       share_folder: /Shares
       user_layout: "{{.Username}}"
       permissions: "0700"
@@ -59,7 +59,7 @@ storage_users:
 web:
   http_addr: 0.0.0.0:9100
   http_root: /
-  theme_path: /Users/felix/work/opencloud/web/dist
+  theme_path: ../../web/dist
   
 # Frontend (WebDAV, OCS)
 frontend:

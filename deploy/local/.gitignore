@@ -1,0 +1,6 @@
+# Local deployment runtime files
+data/
+logs/
+*.log
+*.pid
+.DS_Store
