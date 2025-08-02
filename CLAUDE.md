@@ -4,13 +4,55 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Workspace Structure
 
-This is a workspace containing multiple OpenCloud-related repositories:
+This workspace contains all OpenCloud-related repositories from both opencloud-eu and opencloud-community organizations:
 
+### Core Repository
 - **opencloud/** - Main backend service repository (git@github.com:opencloud-eu/opencloud.git)
-- **docs/** - Documentation website repository (git@github.com:opencloud-eu/docs.git)
+
+### Client Applications
+- **web/** - Web UI for OpenCloud built with Vue.js and TypeScript (git@github.com:opencloud-eu/web.git)
+- **desktop/** - Desktop application for Windows, macOS, and Linux (git@github.com:opencloud-eu/desktop.git)
+- **ios/** - iOS mobile application (git@github.com:opencloud-eu/ios.git)
+- **android/** - Android mobile application (git@github.com:opencloud-eu/android.git)
+
+### Libraries and SDKs
+- **reva/** - WebDAV/gRPC/HTTP server to link clients to storage backends (git@github.com:opencloud-eu/reva.git)
+- **libre-graph-api/** - LibreGraph API specifications (git@github.com:opencloud-eu/libre-graph-api.git)
+- **libre-graph-api-go/** - Go client library for LibreGraph API (git@github.com:opencloud-eu/libre-graph-api-go.git)
+- **libre-graph-api-php/** - PHP client library for LibreGraph API (git@github.com:opencloud-eu/libre-graph-api-php.git)
+- **libre-graph-api-typescript-axios/** - TypeScript/Axios client for LibreGraph API (git@github.com:opencloud-eu/libre-graph-api-typescript-axios.git)
+- **libre-graph-api-cpp-qt-client/** - C++/Qt client for LibreGraph API (git@github.com:opencloud-eu/libre-graph-api-cpp-qt-client.git)
+- **ios-sdk/** - iOS SDK for OpenCloud integration (git@github.com:opencloud-eu/ios-sdk.git)
+- **android-dav/** - Android DAV library (git@github.com:opencloud-eu/android-dav.git)
+
+### Extensions and Integrations
+- **web-extensions/** - Official apps and extensions for OpenCloud Web (git@github.com:opencloud-eu/web-extensions.git)
+- **web-app-skeleton/** - Template for creating OpenCloud web applications (git@github.com:opencloud-eu/web-app-skeleton.git)
+- **rclone/** - Fork of rclone with OpenCloud-specific features (git@github.com:opencloud-eu/rclone.git)
+
+### Deployment and Documentation
 - **opencloud-compose/** - Docker Compose configurations (git@github.com:opencloud-eu/opencloud-compose.git)
 - **helm/** - Helm charts for Kubernetes deployments (git@github.com:opencloud-eu/helm.git)
+- **docs/** - Documentation website repository (git@github.com:opencloud-eu/docs.git)
+
+### Infrastructure and DevOps
+- **container-clamav-icap/** - ClamAV antivirus scanning via ICAP protocol (git@github.com:opencloud-eu/container-clamav-icap.git)
+- **container-radicale/** - Radicale CalDAV/CardDAV server container (git@github.com:opencloud-eu/container-radicale.git)
+- **containers-woodpecker-windows/** - Windows containers for Woodpecker CI (git@github.com:opencloud-eu/containers-woodpecker-windows.git)
+- **woodpecker-ci-config-service/** - Configuration service for Woodpecker CI (git@github.com:opencloud-eu/woodpecker-ci-config-service.git)
+- **ci-docker-desktop/** - Docker images for CI desktop builds (git@github.com:opencloud-eu/ci-docker-desktop.git)
+
+### Development Tools
+- **qa/** - Quality assurance and testing tools (git@github.com:opencloud-eu/qa.git)
+- **cdperf/** - Performance testing framework (git@github.com:opencloud-eu/cdperf.git)
+- **craft-blueprints-opencloud/** - KDE Craft blueprints for building OpenCloud (git@github.com:opencloud-eu/craft-blueprints-opencloud.git)
+- **go-micro-plugins/** - Go-micro plugins for OpenCloud services (git@github.com:opencloud-eu/go-micro-plugins.git)
+- **openbuild/** - Build system for OpenCloud components (git@github.com:opencloud-eu/openbuild.git)
+
+### Community Resources
 - **nexus/** - OpenCloud Community Nexus - community knowledge hub (git@github.com:opencloud-community/nexus.git)
+- **awesome-apps/** - Curated list of apps that work with OpenCloud (git@github.com:opencloud-eu/awesome-apps.git)
+- **.github/** - GitHub organization profile and shared workflows (git@github.com:opencloud-eu/.github.git)
 
 Each directory is a separate repository with its own development workflow.
 
