@@ -125,6 +125,62 @@ When forking opencloud-eu repositories to opencloud-community:
 - Use pull requests for code review and collaboration
 - Follow semantic PR specifications for commits and PRs
 
+### GitHub CLI Workflow
+
+When working with issues and pull requests, use the GitHub CLI (`gh`) with file-based content:
+
+#### Check for Templates
+Before creating issues or PRs, check if the repository has templates:
+```bash
+# Check for issue templates
+ls -la .github/ISSUE_TEMPLATE/
+
+# Check for PR template
+ls -la .github/pull_request_template.md
+```
+
+#### Creating Issues
+1. Create issue body file (e.g., `/tmp/issue-body.md`) with the content
+2. Use `gh issue create` with `--body-file`:
+```bash
+gh issue create \
+  --repo opencloud-eu/repository-name \
+  --title "Clear, concise issue title" \
+  --body-file /tmp/issue-body.md
+```
+
+#### Creating Pull Requests
+1. Create PR body file (e.g., `/tmp/pr-body.md`) with the content
+2. Use `gh pr create` with `--body-file`:
+```bash
+gh pr create \
+  --repo opencloud-eu/repository-name \
+  --title "feat: add new feature" \
+  --body-file /tmp/pr-body.md \
+  --base main \
+  --head username:branch-name
+```
+
+#### Adding Comments
+```bash
+# Add comment to issue
+gh issue comment 123 --repo opencloud-eu/repository-name \
+  --body "Comment text or @mention users for visibility"
+
+# Add comment to PR
+gh pr comment 456 --repo opencloud-eu/repository-name \
+  --body "LGTM! Thanks for the fix."
+```
+
+#### Best Practices
+- Always use descriptive titles for issues and PRs
+- Keep the title out of the body file (set via --title parameter)
+- Use markdown formatting in body files
+- Reference related issues/PRs (e.g., "Fixes #123")
+- @ mention relevant people in comments when needed
+- Follow repository-specific templates when available
+- Review diffs before creating PRs: `git diff` or `gh pr diff`
+
 ## Common Development Commands
 
 ### OpenCloud Backend (opencloud/)
